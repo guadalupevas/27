@@ -1,0 +1,124 @@
+/* estilo para la imagen*/
+div img {
+    width: 15%;
+    border: 5px doubles #000;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+::selection {
+    color: rgb(225, 187, 238);
+    background-color: rgb(239, 240, 252);
+}
+
+header nav ul li a {
+    cursor: crosshair;
+}
+
+.caja {
+    width: 30%;
+    border: 5px solid rgb(221, 223, 240);
+    gap: 20px;
+    display: block;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+table {
+    color: blue;
+    text-align: center;
+    display: flex;
+    background-color: aliceblue;
+}
+table td {
+    display: flex;
+}
+ main a p {
+    background-color: rgb(216, 231, 231);
+    color: #000;
+}
+header {
+    background-color: rgb(255, 252, 252);
+    display: flex;
+    justify-content:baseline;
+    position: relative;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    text-align: center;
+    margin: 30px;
+}
+
+footer {
+    background-color: rgb(221, 242, 245);
+    display: flex;
+    justify-content: space-around;
+}
+footer ul {
+    display: flex;
+}
+footer ul li {
+    text-align: center;
+    margin: 30px;
+}
+main {
+    display: flex;
+    background-color: rgb(234, 234, 234);
+}
+
+.menu {
+    background-color: rgb(250, 223, 197);
+    flex: 20%;
+    margin: 5px;
+}
+
+.contenido {
+    background-color: rgb(189, 250, 239);
+    flex: 60%;
+}
+
+.menu ul li {
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(190, 139, 237);
+    }
+    main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+    }
+    .caja{
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
